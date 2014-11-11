@@ -1,0 +1,74 @@
+Coursera: Developing Data Products - Course Project
+==========
+author: 
+date: Nov 2014
+transition: rotate
+autosize: True
+
+Introduction
+=========
+
+<font size='5'>**Know Your Car's Fuel Efficiency** is an application that uses a truncated **mtcars** data set to predict an automobile's fuel efficiency. It has been created in **R:Shiny**. It consists of three panels. A left panel for user input, a center panel to display the prediction, both in mpg (miles per gallon) and kmpl (kilometers per litre) and a right panel, which provides user-friendly information on the application and method to use it.</font>
+
+![Application Screen](PicSld1.jpg)
+
+Application Base
+========
+The truncated **mtcars** data set has the following structure:<font size='5'>
+```{r echo=FALSE,comment=NA}
+library(knitr)
+data(mtcars);mcars=mtcars[,-c(5,7,8)];str(mcars)
+```
+</font>
+***
+A linear regression model is used to predict fuel efficiency for automobiles. The summary of the model is as follows:<font size='4'>
+```{r echo=FALSE}
+summary(lm(mpg~.,mcars))
+```
+</font>
+
+Title And Information Zone
+========
+<b>Title Zone:</b>
+![Title Screen](PicSld2.jpg)
+<b>Info Pane:</b>
+![Information Screen](PicSld5.jpg)
+***
+
+<font size='5' color='grey'>The Title screen is at the top of the screen and just calls out a short title capturing the central theme of the application. It uses the **wellPanel** and **h1** feature of shiny to provide a user-friendly description for the application.</font>
+
+<font size='5' color='blue'>The information panel is located to the right of the screen. It provides information on the application and method to use the application. It's user-friendly and uses many of the formatting features provided in shiny to provide it an attractive look.</font> 
+
+Input Zone
+==========
+![Input Screen](PicSld3.jpg)
+***
+
+<font size='4'>The input panel is located to the left of the screen and accepts user input to predict automobile efficiency.
+It has a title panel, four ***text panels*** and three ***sliders*** to facilitate information input.
+
+1. **Number Of Cylinders** - Number of cylinders in the car.
+2. **Displacement-cu.in.** - Total cylinder displacement in cubic inches.
+3. **Transmission** - Type of transmission, auto or manual.
+4. **Horsepower** - Engine horsepower of car.
+5. **Number Of Gears** - Number of gears in car.
+6. **Weight Of The Car -1000 lbs** - Weight of the car in 1000's of pounds.
+7. **Number Of Carburettors** - Number of carburettors in the car.
+
+</font>
+
+Prediction Zone
+========================================================
+left:40%
+![Prediction Screen](PicSld4.jpg)
+***
+<font size='5'>This panel is located to the center of the screen. Application calculates and shows prediction of an automobile's efficiency in this screen. Based on user input, fuel efficiency of the car is shown in miles per gallon and kilometers per litre. <b><font color="red">Figures in red</font></b> are miles per gallon and <b><font color='green'>figures in green</font></b> are kilometers per litre.
+
+Application doesnot show calculations in **IE** sometimes, but, shows up clearly in **Google Chrome** or other modern browsers. Shows up well in maximized screens. Adjusting the display width and height would also help it showing it well.
+
+<hr>
+<b>Possible Improvements :</b>
+- Use a more refined regression model after accounting for correlated features.
+- Application to be progammed to show a picture of the car based on user inputs.
+
+</font>
