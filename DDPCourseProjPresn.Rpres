@@ -51,7 +51,7 @@ Input Zone
 ![Input Screen](PicSld3.jpg)
 ***
 
-<font size='4'>The input panel is located to the left of the screen and accepts user input to predict automobile efficiency.
+<font size=4>The input panel is located to the left of the screen and accepts user input to predict automobile efficiency.
 It has a title panel, four ***text panels*** and three ***sliders*** to facilitate information input.
 
 1. **Number Of Cylinders** - Number of cylinders in the car.
@@ -63,6 +63,7 @@ It has a title panel, four ***text panels*** and three ***sliders*** to facilita
 7. **Number Of Carburettors** - Number of carburettors in the car.
 
 </font>
+
 
 Prediction Zone
 ========================================================
