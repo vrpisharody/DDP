@@ -15,7 +15,7 @@ autosize: True
 Introduction
 =========
 
-<font size='5'>**Know Your Car's Fuel Efficiency** is an application that uses a truncated **mtcars** data set to predict an automobile's fuel efficiency. It has been created in **R:Shiny**. It consists of three panels. A left panel for user input, a center panel to display the prediction, both in mpg (miles per gallon) and kmpl (kilometers per litre) and a right panel, which provides user-friendly information on the application and method to use it.</font>
+<font size='5'>**Know Your Car's Fuel Efficiency** is an application that uses a truncated **mtcars** data set to predict an automobile's fuel efficiency. It has been created in **R:Shiny**. It consists of four panels. A top panel housing the application title and four tabs, a left panel for user input, a center panel to display the prediction, both in mpg (miles per gallon) and kmpl (kilometers per litre) and a right panel, which provides user-friendly information on the application and method to use it.</font>
 
 <img src="PicSld1.jpg" width=800 height=450></img>
 
@@ -74,7 +74,7 @@ Title And Information Zone
 ![Info Screen](PicSld5.jpg)
 ***
 
-<font size='5' color='grey'>The Title screen is at the top of the screen and just calls out a short title capturing the central theme of the application. It uses the **wellPanel** and **h1** feature of shiny to provide a user-friendly description for the application.</font>
+<font size='5' color='grey'>The Title screen is at the top of the screen. It houses four tabs - **Know Your Car, About, UI & Server** and  calls out a short title capturing the central theme of the application. It uses the **wellPanel** and **h1** feature of shiny to provide a user-friendly description for the application.</font>
 
 <font size='5' color='blue'>The information panel is located to the right of the screen. It provides information on the application and method to use the application. It's user-friendly and uses many of the formatting features provided in shiny to provide it an attractive look.</font> 
 
